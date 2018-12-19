@@ -50,7 +50,7 @@ class App extends Component {
 
         return (
 
-            <div>
+            <div  style={{position:'fixed'}}>
                 <div className="container-fluid black-mountain">
                     <div className="row">
                         <div className='col-md-6'>
@@ -177,7 +177,7 @@ class App extends Component {
 
                     </div>
 
-                    <div className="row" style={{paddingTop:20}}>
+                    <div className="row">
                         <div className='col-md-3'>
                             <InnerContent
                                 href={'https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html'}
