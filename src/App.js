@@ -194,6 +194,7 @@ class App extends Component {
                         </div>
                         <div className='col-md-3'>
                             <InnerContent
+                                href={'https://ehr.bmv.com.hk/blackmountain/fbs_hmsg_admin.asp'}
                                 image={"../static/payslip.png"}
                                 headingLabel="Payslips"
                             />
