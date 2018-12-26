@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Popup from 'reactjs-popup';
 import './App.css';
 
 const InnerContent = (props) => {
@@ -50,7 +51,7 @@ class App extends Component {
 
         return (
 
-            <div  style={{position:'fixed'}}>
+            <div>
                 <div className="container-fluid black-mountain">
                     <div className="row">
                         <div className='col-md-6'>
@@ -185,19 +186,44 @@ class App extends Component {
                                 headingLabel="HR Self-Service"
                             />
                         </div>
-                        <div className='col-md-3' style={{backgroundColor:'#89bcf1'}}>
-                            <InnerContent
-                                href={'https://www.zoho.eu/expense/'}
-                                image={"../static/travel.png"}
-                                headingLabel="Travel & Expenses"
-                            />
-                        </div>
-                        <div className='col-md-3'>
-                            <InnerContent
-                                href={'https://ehr.bmv.com.hk/blackmountain/fbs_hmsg_admin.asp'}
-                                image={"../static/payslip.png"}
-                                headingLabel="Payslips"
-                            />
+                        <div className="col-md-6">
+                            <Popup
+                            trigger={
+                            <div className="row">
+                                <div className='col-md-6' style={{backgroundColor:'#89bcf1'}}>
+                                    <InnerContent
+                                        href={'https://www.zoho.eu/expense/'}
+                                        image={"../static/travel.png"}
+                                        headingLabel="Travel & Expenses"
+                                    />
+                                </div>
+                                <div className='col-md-6'>
+                                    <InnerContent
+                                        href={'https://ehr.bmv.com.hk/blackmountain/fbs_hmsg_admin.asp'}
+                                        image={"../static/payslip.png"}
+                                        headingLabel="Payslips"
+                                    />
+                                </div>
+                            </div>
+                            }
+                            position="top center"
+                            on="hover"
+                            contentStyle={{width:'500px',borderRadius:'5px'}}
+                            >
+                                <div className="row">
+                                    <div className="col-md-6" >
+                                        <img src="../static/zoho_login.png"
+                                           width={'100%'}
+                                        />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <p>You will be redirected to the Zoho Login page.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Popup>
                         </div>
                         <div className='col-md-3' style={{backgroundColor:'#89bcf1'}}>
                             <InnerContent
