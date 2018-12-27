@@ -179,25 +179,25 @@ class App extends Component {
                     </div>
 
                     <div className="row">
-                        <div className='col-md-3'>
+                        <div className='col-6 col-md-3'>
                             <InnerContent
                                 href={'https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html'}
                                 image={"../static/service.png"}
                                 headingLabel="HR Self-Service"
                             />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-12 col-md-6">
                             <Popup
                             trigger={
                             <div className="row">
-                                <div className='col-md-6' style={{backgroundColor:'#89bcf1'}}>
+                                <div className='col-6 col-md-6' style={{backgroundColor:'#89bcf1'}}>
                                     <InnerContent
                                         href={'https://www.zoho.eu/expense/'}
                                         image={"../static/travel.png"}
                                         headingLabel="Travel & Expenses"
                                     />
                                 </div>
-                                <div className='col-md-6'>
+                                <div className='col-6 col-md-6'>
                                     <InnerContent
                                         href={'https://ehr.bmv.com.hk/blackmountain/fbs_hmsg_admin.asp'}
                                         image={"../static/payslip.png"}
@@ -225,7 +225,7 @@ class App extends Component {
                                 </div>
                             </Popup>
                         </div>
-                        <div className='col-md-3' style={{backgroundColor:'#89bcf1'}}>
+                        <div className='order-1 col-6 col-md-3' style={{backgroundColor:'#89bcf1'}}>
                             <InnerContent
                                 href={"https://www.panalyt.com/"}
                                 panalyt={true}

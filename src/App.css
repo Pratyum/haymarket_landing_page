@@ -12,6 +12,9 @@
   font-size: 13px;
 }
 
+.order-1{
+  order:-1;
+}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -28,6 +31,10 @@
   .black-mountain{
     position: fixed;
   }
+  .order-1{
+    order:0;
+  }
+  
 
 }
 
