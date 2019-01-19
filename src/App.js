@@ -72,10 +72,9 @@ class App extends Component {
                             <div className='row bm-notes'>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Welcome to the Haymarket Asia HR Portal</span>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        From this page you can access services provided by our HR Services partner, Black Mountain.
                                         </p>
                                         <p style={{textAlign:'right'}}>
                                             11/10/18
@@ -84,10 +83,9 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>HR Self Service Tasks</span>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        For HR Self Service tasks, such as applying for leave, amending your address or checking your emergency contacts, use the “HR Self-Service” link below to access the new “Zoho People” system.
                                         </p>
                                         <p style={{textAlign:'right'}}>
                                             11/10/18
@@ -96,10 +94,9 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Travel & Expenses</span>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        To request approval for business travel or submit expenses, please access the “Travel & Expenses” link below, which will take you to the new “Zoho Expense” tool.
                                         </p>
                                         <p style={{textAlign:'right'}}>
                                             11/10/18
@@ -112,10 +109,9 @@ class App extends Component {
                             <div className='row bm-notes' style={{paddingTop:10}}>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Payslips</span>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        To access your Payslips, select the “Payslips” link below, which will take you to the Black Mountain Online Resource Centre.
                                         </p>
                                         <p style={{textAlign:'right'}}>
                                             11/10/18
@@ -124,10 +120,9 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Tools</span>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        You can contact the Black Mountain team directly for help on these tools, or for any routine HR enquiries:
                                         </p>
                                         <p style={{textAlign:'right'}}>
                                             11/10/18
@@ -136,10 +131,10 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Contact</span>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        Singapore: Contact Faith Chan, faith.chan@blackmountainhr.com<br/>
+                                        Hong Kong: Claire Loh, Claire.loh@blackmountainhr.com
                                         </p>
                                         <p style={{textAlign:'right'}}>
                                             11/10/18
@@ -154,7 +149,7 @@ class App extends Component {
                             <div className="row">
                                 <div className="col-md-12" style={{paddingRight:0}}>
                                     <div style={{padding:'0px 0 0px',backgroundColor:'#89bcf1'}}>
-                                        <a href="https://www.blackmountainhr.com/">
+                                        <a href="https://www.blackmountainhr.com/" target="__blank">
                                             <img
                                                 src="../static/group.png"
                                                 style={{margin:'0 auto',display:'block', width:'75%'}}
@@ -169,7 +164,7 @@ class App extends Component {
                                         <p style={{textAlign:'center',fontWeight:700, fontFamily:"ObjectiveMK1-Xbd",paddingBottom:'10'}}>
                                             Provided for
                                         </p>
-                                        <a href="http://www.haymarket.com/asia">
+                                        <a href="http://www.haymarket.com/asia" target="__blank">
                                             <img
                                                 src="../static/haymarket.png"
                                                 style={{margin:'0 auto',display:'block', width:'70%'}}
@@ -197,18 +192,13 @@ class App extends Component {
                             }
                             position="top center"
                             on="hover"
-                            contentStyle={{width:'500px',borderRadius:'5px'}}
+                            contentStyle={{width:'250px',borderRadius:'5px'}}
                             >
                                 <div className="row">
-                                    <div className="col-md-6" >
-                                        <img src="../static/zoho_login.png"
-                                           width={'100%'}
-                                        />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <p>You will be redirected to the Zoho Login page.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                    
+                                    <div className="col-md-12">
+                                        <p>You will be redirected to the Blackmountain Login page.</p>
+                                        <p>Access your payslips at the BMV Online Resource Centre: click the link and login with your BMV login.  This page also has an easy “forgot password” link.
                                         </p>
                                     </div>
                                 </div>
@@ -247,21 +237,42 @@ class App extends Component {
                                     </div>
                                     <div className="col-md-6">
                                         <p>You will be redirected to the Zoho Login page.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        <p>Access both the “Travel and Expense” approval tool and the “HR Self-Service” tool via these links.  They will both take you to the Zoho “Accounts” page where you can enter the same username (your Haymarket email address) and password for both tools.
+</p><p>
+You will then be taken to the correct tool, based on the link you selected here.  Click either button to get started.
+</p><p>
+This page also has an easy “forgot password” link.
                                         </p>
                                     </div>
                                 </div>
                             </Popup>
                         </div>
                         <div className='order-1 col-6 col-md-3' style={{backgroundColor:'#89bcf1'}}>
-                            <InnerContent
-                                href={"https://www.panalyt.com/"}
-                                panalyt={true}
-                                image={"../static/new_panalyt_logo_white.png"}
-                                headingLabel="People Analytics"
-                            />
-                            
+                            <Popup
+                            trigger={
+                                <div className="row">
+                                <div className='col-12 col-md-12'>
+                                <InnerContent
+                                    href={"https://www.panalyt.com/"}
+                                    panalyt={true}
+                                    image={"../static/new_panalyt_logo_white.png"}
+                                    headingLabel="People Analytics"
+                                />
+                                </div></div>
+                            }
+                            position="top center"
+                            on="hover"
+                            contentStyle={{width:'250px',borderRadius:'5px'}}
+                            >
+                                <div className="row">
+                                    
+                                    <div className="col-md-12">
+                                        <p>You will be redirected to the Panalyt Login page.</p>
+                                        <p>Some Managers have access to useful data and analytics on their team, via the Panalyt “People Analytics” tool.  If you have an account you access the tool by clicking this link.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Popup>
                         </div>
 
                     </div>
