@@ -11,7 +11,9 @@
 .bm-notes p {
   font-size: 13px;
 }
-
+.bm-title {
+  font-size: 13px;
+}
 .order-1{
   order:-1;
 }
@@ -28,9 +30,9 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .black-mountain{
+  /* .black-mountain{
     position: fixed;
-  }
+  } */
   .order-1{
     order:0;
   }
@@ -40,5 +42,26 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+  
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1440px) { 
+  .bm-notes p {
+    font-size: 15px;
+  }
+  .bm-title {
+    font-size: 15px;
+  }
+  
+}
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 2000px) { 
+  .bm-notes p {
+    font-size: 25px;
+  }
+  .bm-title {
+    font-size: 25px;
+  }
+  
 }

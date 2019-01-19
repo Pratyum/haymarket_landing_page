@@ -72,7 +72,7 @@ class App extends Component {
                             <div className='row bm-notes'>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Donec hendrerit vehicula sem, id sodales enim blandit ut.
@@ -84,7 +84,7 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Donec hendrerit vehicula sem, id sodales enim blandit ut.
@@ -96,7 +96,7 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Donec hendrerit vehicula sem, id sodales enim blandit ut.
@@ -112,7 +112,7 @@ class App extends Component {
                             <div className='row bm-notes' style={{paddingTop:10}}>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Donec hendrerit vehicula sem, id sodales enim blandit ut.
@@ -124,7 +124,7 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Donec hendrerit vehicula sem, id sodales enim blandit ut.
@@ -136,7 +136,7 @@ class App extends Component {
                                 </div>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span style={{fontWeight:700}}>Title</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Title</span>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             Donec hendrerit vehicula sem, id sodales enim blandit ut.
@@ -154,10 +154,12 @@ class App extends Component {
                             <div className="row">
                                 <div className="col-md-12" style={{paddingRight:0}}>
                                     <div style={{padding:'0px 0 0px',backgroundColor:'#89bcf1'}}>
-                                        <img
-                                            src="../static/group.png"
-                                            style={{margin:'0 auto',display:'block', width:'75%'}}
-                                        />
+                                        <a href="https://www.blackmountainhr.com/">
+                                            <img
+                                                src="../static/group.png"
+                                                style={{margin:'0 auto',display:'block', width:'75%'}}
+                                            />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -167,41 +169,68 @@ class App extends Component {
                                         <p style={{textAlign:'center',fontWeight:700, fontFamily:"ObjectiveMK1-Xbd",paddingBottom:'10'}}>
                                             Provided for
                                         </p>
-                                        <img
-                                            src="../static/haymarket.png"
-                                            style={{margin:'0 auto',display:'block', width:'70%'}}
-                                        />
+                                        <a href="http://www.haymarket.com/asia">
+                                            <img
+                                                src="../static/haymarket.png"
+                                                style={{margin:'0 auto',display:'block', width:'70%'}}
+                                            />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-
+                    
                     <div className="row">
                         <div className='col-6 col-md-3'>
-                            <InnerContent
-                                href={'https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html'}
-                                image={"../static/service.png"}
-                                headingLabel="HR Self-Service"
-                            />
+                        <Popup
+                            trigger={
+                                <div className="row">
+                                <div className='col-12 col-md-12'>
+                                <InnerContent
+                                    href={'https://ehr.bmv.com.hk/blackmountain/fbs_hmsg_admin.asp'}
+                                    image={"../static/payslip.png"}
+                                    headingLabel="Payslips"
+                                />
+                                </div></div>
+                            }
+                            position="top center"
+                            on="hover"
+                            contentStyle={{width:'500px',borderRadius:'5px'}}
+                            >
+                                <div className="row">
+                                    <div className="col-md-6" >
+                                        <img src="../static/zoho_login.png"
+                                           width={'100%'}
+                                        />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <p>You will be redirected to the Zoho Login page.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Donec hendrerit vehicula sem, id sodales enim blandit ut.
+                                        </p>
+                                    </div>
+                                </div>
+                            </Popup>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6">   
+
                             <Popup
                             trigger={
                             <div className="row">
                                 <div className='col-6 col-md-6' style={{backgroundColor:'#89bcf1'}}>
                                     <InnerContent
-                                        href={'https://www.zoho.eu/expense/'}
+                                        href={'https://accounts.zoho.com/signin?servicename=zohoexpense&signupurl=https://www.zoho.com/expense/signup.html'}
                                         image={"../static/travel.png"}
                                         headingLabel="Travel & Expenses"
                                     />
                                 </div>
                                 <div className='col-6 col-md-6'>
                                     <InnerContent
-                                        href={'https://ehr.bmv.com.hk/blackmountain/fbs_hmsg_admin.asp'}
-                                        image={"../static/payslip.png"}
-                                        headingLabel="Payslips"
+                                        href={'https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html'}
+                                        image={"../static/service.png"}
+                                        headingLabel="HR Self-Service"
                                     />
                                 </div>
                             </div>
@@ -232,6 +261,7 @@ class App extends Component {
                                 image={"../static/new_panalyt_logo_white.png"}
                                 headingLabel="People Analytics"
                             />
+                            
                         </div>
 
                     </div>
