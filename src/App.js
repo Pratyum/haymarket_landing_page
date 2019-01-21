@@ -58,7 +58,7 @@ class App extends Component {
                             <div className='row' style={{paddingTop:30,paddingBottom:20}}>
                                 <div className="col-md-12">
                                     <div style={{fontWeight:700, display:'inline-block', fontSize: 17, fontFamily:"ObjectiveMK1-Xbd"}}>
-                                        Notices
+                                            Welcome to the Haymarket Asia HR Portal
                                     </div>
                                     <div style={{float:'right',display:'inline-block'}}>
                                         <i style={{fontSize:23}} className="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
@@ -72,12 +72,9 @@ class App extends Component {
                             <div className='row bm-notes'>
                                 <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Welcome to the Haymarket Asia HR Portal</span>
+                                        <span className="bm-title" style={{fontWeight:700}}>Welcome</span>
                                         <p>
                                         From this page you can access services provided by our HR Services partner, Black Mountain.
-                                        </p>
-                                        <p style={{textAlign:'right'}}>
-                                            11/10/18
                                         </p>
                                     </div>
                                 </div>
@@ -87,9 +84,6 @@ class App extends Component {
                                         <p>
                                         For HR Self Service tasks, such as applying for leave, amending your address or checking your emergency contacts, use the “HR Self-Service” link below to access the new “Zoho People” system.
                                         </p>
-                                        <p style={{textAlign:'right'}}>
-                                            11/10/18
-                                        </p>
                                     </div>
                                 </div>
                                 <div className='col-md-4'>
@@ -97,9 +91,6 @@ class App extends Component {
                                         <span className="bm-title" style={{fontWeight:700}}>Travel & Expenses</span>
                                         <p>
                                         To request approval for business travel or submit expenses, please access the “Travel & Expenses” link below, which will take you to the new “Zoho Expense” tool.
-                                        </p>
-                                        <p style={{textAlign:'right'}}>
-                                            11/10/18
                                         </p>
                                     </div>
                                 </div>
@@ -113,31 +104,23 @@ class App extends Component {
                                         <p>
                                         To access your Payslips, select the “Payslips” link below, which will take you to the Black Mountain Online Resource Centre.
                                         </p>
-                                        <p style={{textAlign:'right'}}>
-                                            11/10/18
-                                        </p>
                                     </div>
                                 </div>
-                                <div className='col-md-4'>
+                                {/* <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
-                                        <span className="bm-title" style={{fontWeight:700}}>Tools</span>
+                                        <span className="bm-title" style={{fontWeight:700}}></span>
                                         <p>
-                                        You can contact the Black Mountain team directly for help on these tools, or for any routine HR enquiries:
-                                        </p>
-                                        <p style={{textAlign:'right'}}>
-                                            11/10/18
+                                        
                                         </p>
                                     </div>
-                                </div>
-                                <div className='col-md-4'>
+                                </div> */}
+                                <div className='col-12 col-md-8 no-gutters no-padding'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
                                         <span className="bm-title" style={{fontWeight:700}}>Contact</span>
+                                        <p>You can contact the Black Mountain team directly for help on these tools, or for any routine HR enquiries:</p>
                                         <p>
                                         Singapore: Contact Faith Chan, faith.chan@blackmountainhr.com<br/>
-                                        Hong Kong: Claire Loh, Claire.loh@blackmountainhr.com
-                                        </p>
-                                        <p style={{textAlign:'right'}}>
-                                            11/10/18
+                                        Hong Kong: Contact Claire Loh, Claire.loh@blackmountainhr.com
                                         </p>
                                     </div>
                                 </div>
@@ -197,9 +180,9 @@ class App extends Component {
                                 <div className="row">
                                     
                                     <div className="col-md-12">
-                                        <p>You will be redirected to the Blackmountain Login page.</p>
-                                        <p>Access your payslips at the BMV Online Resource Centre: click the link and login with your BMV login.  This page also has an easy “forgot password” link.
+                                        <p>Access your payslips at the BMV Online Resource Centre: click the link and login with your BMV login.  
                                         </p>
+                                        <p>This page also has an easy “forgot password” link.</p>
                                     </div>
                                 </div>
                             </Popup>
@@ -236,7 +219,6 @@ class App extends Component {
                                         />
                                     </div>
                                     <div className="col-md-6">
-                                        <p>You will be redirected to the Zoho Login page.</p>
                                         <p>Access both the “Travel and Expense” approval tool and the “HR Self-Service” tool via these links.  They will both take you to the Zoho “Accounts” page where you can enter the same username (your Haymarket email address) and password for both tools.
 </p><p>
 You will then be taken to the correct tool, based on the link you selected here.  Click either button to get started.
@@ -267,9 +249,9 @@ This page also has an easy “forgot password” link.
                                 <div className="row">
                                     
                                     <div className="col-md-12">
-                                        <p>You will be redirected to the Panalyt Login page.</p>
                                         <p>Some Managers have access to useful data and analytics on their team, via the Panalyt “People Analytics” tool.  If you have an account you access the tool by clicking this link.
                                         </p>
+                                        <p>This page also has an easy "forgot password" link</p>
                                     </div>
                                 </div>
                             </Popup>
