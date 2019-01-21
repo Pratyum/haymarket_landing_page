@@ -20,8 +20,9 @@ const InnerContent = (props) => {
             />
         </a>
 
-        <p style={{marginTop:20,fontSize: '1rem', color:"black",fontFamily:"ObjectiveMK1-Xbd",textAlign:'center'}}>
-            {props.headingLabel}</p>
+        <p className="bm-title" style={{marginTop:20, color:"black",fontFamily:"ObjectiveMK1-Xbd",textAlign:'center'}}>
+            {props.headingLabel}
+        </p>
 
     </div>
 };
@@ -57,7 +58,7 @@ class App extends Component {
                         <div className='col-md-6'>
                             <div className='row' style={{paddingTop:30,paddingBottom:20}}>
                                 <div className="col-md-12">
-                                    <div style={{fontWeight:700, display:'inline-block', fontSize: 17, fontFamily:"ObjectiveMK1-Xbd"}}>
+                                    <div style={{fontWeight:700, display:'inline-block', fontFamily:"ObjectiveMK1-Xbd"}} className="bm-title">
                                             Welcome to the Haymarket Asia HR Portal
                                     </div>
                                     <div style={{float:'right',display:'inline-block'}}>
