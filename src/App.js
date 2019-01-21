@@ -175,7 +175,8 @@ class App extends Component {
                             }
                             position="top center"
                             on="hover"
-                            contentStyle={{width:'250px',borderRadius:'5px'}}
+                            contentStyle={{borderRadius:'5px'}}
+                            className="popup"
                             >
                                 <div className="row">
                                     
@@ -210,7 +211,8 @@ class App extends Component {
                             }
                             position="top center"
                             on="hover"
-                            contentStyle={{width:'500px',borderRadius:'5px'}}
+                            contentStyle={{width:'400px',borderRadius:'5px'}}
+                            className="popup-big"
                             >
                                 <div className="row">
                                     <div className="col-md-6" >
@@ -244,7 +246,8 @@ This page also has an easy “forgot password” link.
                             }
                             position="top center"
                             on="hover"
-                            contentStyle={{width:'250px',borderRadius:'5px'}}
+                            contentStyle={{borderRadius:'5px'}}
+                            className="popup"
                             >
                                 <div className="row">
                                     
