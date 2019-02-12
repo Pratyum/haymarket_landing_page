@@ -62,8 +62,8 @@ class App extends Component {
                                             Welcome to the Haymarket Asia HR Portal
                                     </div>
                                     <div style={{float:'right',display:'inline-block'}}>
-                                        <i style={{fontSize:23}} className="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-                                        <i style={{fontSize:23}} className="fa fa-angle-right" aria-hidden="true"></i>
+                                        {/* <i style={{fontSize:23}} className="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                                        <i style={{fontSize:23}} className="fa fa-angle-right" aria-hidden="true"></i> */}
                                         {/*<span style={{fontSize:17}}>{'<'}&nbsp;&nbsp;</span>*/}
                                         {/*<span style={{fontSize:17}}>&nbsp;{'>'}</span>*/}
                                     </div>
@@ -99,14 +99,14 @@ class App extends Component {
 
 
                             <div className='row bm-notes' style={{paddingTop:10}}>
-                                <div className='col-md-4'>
+                                {/* <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
                                         <span className="bm-title" style={{fontWeight:700}}>Payslips</span>
                                         <p>
                                         To access your Payslips, select the “Payslips” link below, which will take you to the Black Mountain Online Resource Centre.
                                         </p>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/* <div className='col-md-4'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
                                         <span className="bm-title" style={{fontWeight:700}}></span>
@@ -115,7 +115,7 @@ class App extends Component {
                                         </p>
                                     </div>
                                 </div> */}
-                                <div className='col-12 col-md-8 no-gutters no-padding'>
+                                <div className='col-12 col-md-12 no-gutters no-padding'>
                                     <div style={{padding:'10px 10px', backgroundColor:'#7aafe9'}}>
                                         <span className="bm-title" style={{fontWeight:700}}>Contact</span>
                                         <p>You can contact the Black Mountain team directly for help on these tools, or for any routine HR enquiries:</p>
@@ -196,14 +196,14 @@ class App extends Component {
                             <div className="row">
                                 <div className='col-6 col-md-6' style={{backgroundColor:'#89bcf1'}}>
                                     <InnerContent
-                                        href={'https://accounts.zoho.com/signin?servicename=zohoexpense&signupurl=https://www.zoho.com/expense/signup.html'}
+                                        href={'https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=68f7630c-af38-493e-af0d-42e1a23146a7&scope=email&redirect_uri=https%3A%2F%2Faccounts.zoho.com%2Faccounts%2Foauthcallback&state=7fec5dbb8997ee21a1862494a66f33d58db7f5281ded42e516949e0f321abda9c98c51e99ebfe797ab037d4faa2de5bae97025b2be9ddd828a024a0f271711646f84ecd995ebd933e87d8e1e7f01f15c432ece2277b5d38858c83c9583c1f33b'}
                                         image={"../static/travel.png"}
                                         headingLabel="Travel & Expenses"
                                     />
                                 </div>
                                 <div className='col-6 col-md-6'>
                                     <InnerContent
-                                        href={'https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html'}
+                                        href={'https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=68f7630c-af38-493e-af0d-42e1a23146a7&scope=email&redirect_uri=https%3A%2F%2Faccounts.zoho.com%2Faccounts%2Foauthcallback&state=7fec5dbb8997ee21a1862494a66f33d58db7f5281ded42e516949e0f321abda9c98c51e99ebfe797ab037d4faa2de5bae97025b2be9ddd828a024a0f271711646f84ecd995ebd933e87d8e1e7f01f15c432ece2277b5d38858c83c9583c1f33b'}
                                         image={"../static/service.png"}
                                         headingLabel="HR Self-Service"
                                     />
@@ -215,18 +215,15 @@ class App extends Component {
                             contentStyle={{width:'400px',borderRadius:'5px'}}
                             className="popup-big"
                             >
-                                <div className="row">
-                                    <div className="col-md-6" >
-                                        <img src="../static/zoho_login.png"
+                                <div className="row align-items-center">
+                                    <div className="col-md-6 " >
+                                        <img src="../static/microsoft_login.png"
                                            width={'100%'}
                                         />
+                                        {/* <iframe src="https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html" width={'100%'}/> */}
                                     </div>
                                     <div className="col-md-6">
-                                        <p>Access both the “Travel and Expense” approval tool and the “HR Self-Service” tool via these links.  They will both take you to the Zoho “Accounts” page where you can enter the same username (your Haymarket email address) and password for both tools.
-</p><p>
-You will then be taken to the correct tool, based on the link you selected here.  Click either button to get started.
-</p><p>
-This page also has an easy “forgot password” link.
+                                        <p>Access Zoho People by using your Microsoft office 365 'username' and 'password' to enable single sign on feature.
                                         </p>
                                     </div>
                                 </div>
