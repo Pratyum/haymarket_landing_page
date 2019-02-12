@@ -223,7 +223,7 @@ class App extends Component {
                                         {/* <iframe src="https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html" width={'100%'}/> */}
                                     </div>
                                     <div className="col-md-6">
-                                        <p>Access Zoho People by using your Microsoft office 365 'username' and 'password' to enable single sign on feature.
+                                        <p>Access Zoho People by using your Microsoft Office 365 'username' and 'password' to enable single sign on feature.
                                         </p>
                                     </div>
                                 </div>
