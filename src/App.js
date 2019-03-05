@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import Popup from "reactjs-popup";
 import "./App.css";
 
 const InnerContent = props => {
   return (
     <div style={{ paddingTop: 15 }}>
-      <a href={props.href ? props.href : null} target="_blank" style={{height:'60%'}}>
+      <a
+        href={props.href ? props.href : null}
+        target="_blank"
+        style={{ height: "60%" }}
+      >
         <img
           style={{
             width: props.panalyt ? "78%" : "60%",
@@ -26,7 +29,7 @@ const InnerContent = props => {
           color: "black",
           fontFamily: "ObjectiveMK1-Xbd",
           textAlign: "center",
-          height:'30%'
+          height: "30%"
         }}
       >
         {props.headingLabel}
@@ -55,7 +58,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="container-fluid black-mountain" style={{height:'100vh'}}>
+        <div
+          className="container-fluid black-mountain"
+          style={{ height: "100vh" }}
+        >
           <div className="row">
             <div className="col-md-6">
               <div
@@ -85,7 +91,11 @@ class App extends Component {
               <div className="row bm-notes">
                 <div className="col-md-4">
                   <div
-                    style={{ padding: "10px 10px", backgroundColor: "#7aafe9" }}
+                    style={{
+                      padding: "10px 10px",
+                      backgroundColor: "#7aafe9",
+                      height: "100%"
+                    }}
                   >
                     <span className="bm-title" style={{ fontWeight: 700 }}>
                       Welcome
@@ -98,7 +108,11 @@ class App extends Component {
                 </div>
                 <div className="col-md-4">
                   <div
-                    style={{ padding: "10px 10px", backgroundColor: "#7aafe9" }}
+                    style={{
+                      padding: "10px 10px",
+                      backgroundColor: "#7aafe9",
+                      height: "100%"
+                    }}
                   >
                     <span className="bm-title" style={{ fontWeight: 700 }}>
                       HR Self Service Tasks
@@ -113,7 +127,11 @@ class App extends Component {
                 </div>
                 <div className="col-md-4">
                   <div
-                    style={{ padding: "10px 10px", backgroundColor: "#7aafe9" }}
+                    style={{
+                      padding: "10px 10px",
+                      backgroundColor: "#7aafe9",
+                      height: "100%"
+                    }}
                   >
                     <span className="bm-title" style={{ fontWeight: 700 }}>
                       Travel & Expenses
@@ -146,7 +164,11 @@ class App extends Component {
                                 </div> */}
                 <div className="col-12 col-md-12 no-gutters no-padding">
                   <div
-                    style={{ padding: "10px 10px", backgroundColor: "#7aafe9" }}
+                    style={{
+                      padding: "10px 10px",
+                      backgroundColor: "#7aafe9",
+                      height: "100%"
+                    }}
                   >
                     <span className="bm-title" style={{ fontWeight: 700 }}>
                       Contact
@@ -290,7 +312,8 @@ class App extends Component {
                 </div>
               </Popup>
             </div>
-            <div className="col-6 col-md-4"
+            <div
+              className="col-6 col-md-4"
               style={{ backgroundColor: "#89bcf1" }}
             >
               <Popup
@@ -299,8 +322,8 @@ class App extends Component {
                     <div className="col-12 col-md-12">
                       <InnerContent
                         href={"https://www.panalyt.com/"}
-                        panalyt={true}
-                        image={"../static/Panalyt_Logo_Black.png"}
+                        panalyt={false}
+                        image={"../static/people_analytics.png"}
                         headingLabel="People Analytics"
                       />
                     </div>
