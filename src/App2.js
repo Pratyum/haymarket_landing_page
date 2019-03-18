@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./App2.css";
 export class App2 extends Component {
+  componentDidMount() {
+    window.document.title = "Black Mountain";
+    // document.body.style.backgroundColor = "#80b4ec";
+  }
   render() {
     return (
       <>
