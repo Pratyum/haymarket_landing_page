@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Popup from "reactjs-popup";
 import "./App2.css";
 export class App2 extends Component {
   componentDidMount() {
@@ -11,7 +12,7 @@ export class App2 extends Component {
         <header>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div>
-              <a className="navbar-brand" href="#">
+              <span className="navbar-brand">
                 <img
                   src="../static/haymarket.png"
                   style={{
@@ -20,7 +21,7 @@ export class App2 extends Component {
                     width: "50%"
                   }}
                 />
-              </a>
+              </span>
               <span className="navbar-text pull-right">
                 Independence | Creativity | Expertise | Dynamism | Integrity
               </span>
@@ -37,12 +38,9 @@ export class App2 extends Component {
           </div>
         </div>
         <div className="container">
-          <div
-            className="row align-items-center justify-space-around"
-            style={{ height: "40vh" }}
-          >
+          <div className="row justify-content-around">
             <div
-              className="col circle-background align-self-center"
+              className="col-12 col-md-3 circle-background"
               style={{ backgroundColor: "rgb(78,195,210)" }}
               onClick={() =>
                 window.open(
@@ -51,14 +49,38 @@ export class App2 extends Component {
                 )
               }
             >
-              <h3>
-                HR <br />
-                Self Service
-              </h3>
+              <Popup
+                trigger={
+                  <div className="hello">
+                    <h3>
+                      HR <br />
+                      Self Service
+                    </h3>
+                  </div>
+                }
+                position="bottom center"
+                on="hover"
+                contentStyle={{ borderRadius: "5px", width: "30vw" }}
+                className="popup"
+              >
+                <div className="row align-items-center">
+                  <div className="col-md-6 ">
+                    <img src="../static/microsoft_login.png" width={"100%"} />
+                    {/* <iframe src="https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html" width={'100%'}/> */}
+                  </div>
+                  <div className="col-md-6">
+                    <p>
+                      Access Zoho People by using your Microsoft Office 365
+                      'username' and 'password' and enable single sign on
+                      feature.
+                    </p>
+                  </div>
+                </div>
+              </Popup>
             </div>
 
             <div
-              className="col circle-background align-self-center"
+              className="col-12 col-md-3 circle-background"
               style={{ backgroundColor: "rgb(242,123,48)" }}
               onClick={() =>
                 window.open(
@@ -67,34 +89,77 @@ export class App2 extends Component {
                 )
               }
             >
-              <h3>
-                Travel &
-                <br /> Expenses
-              </h3>
+              <Popup
+                trigger={
+                  <div className="hello">
+                    <h3>
+                      Travel & <br />
+                      Expense
+                    </h3>
+                  </div>
+                }
+                position="bottom center"
+                on="hover"
+                contentStyle={{ borderRadius: "5px", width: "30vw" }}
+                className="popup"
+              >
+                <div className="row align-items-center">
+                  <div className="col-md-6 ">
+                    <img src="../static/microsoft_login.png" width={"100%"} />
+                    {/* <iframe src="https://accounts.zoho.com/signin?servicename=zohopeople&signupurl=https://www.zoho.com/people/signup.html" width={'100%'}/> */}
+                  </div>
+                  <div className="col-md-6">
+                    <p>
+                      Access Zoho People by using your Microsoft Office 365
+                      'username' and 'password' and enable single sign on
+                      feature.
+                    </p>
+                  </div>
+                </div>
+              </Popup>
             </div>
 
             <div
-              className="col circle-background  align-self-center"
+              className="col-12 col-md-3 circle-background"
               style={{ backgroundColor: "rgb(234,31,77)" }}
               onClick={() => window.open("https://www.panalyt.com/", "_blank")}
             >
-              <h3>
-                People <br />
-                Analytics
-              </h3>
+              <Popup
+                trigger={
+                  <div className="hello">
+                    <h3>
+                      People <br />
+                      Analytics
+                    </h3>
+                  </div>
+                }
+                position="bottom center"
+                on="hover"
+                contentStyle={{ borderRadius: "5px", width: "30vw" }}
+                className="popup"
+              >
+                <div className="row">
+                  <div className="col-md-12">
+                    <p>
+                      Some Managers have access to useful data and analytics on
+                      their team, via the Panalyt “People Analytics” tool. If
+                      you have an account you access the tool by clicking this
+                      link.
+                    </p>
+                    <p>This page also has an easy "forgot password" link</p>
+                  </div>
+                </div>
+              </Popup>
             </div>
           </div>
         </div>
-        <footer
-          className="container-fluid"
-          style={{ position: "absolute", bottom: "0" }}
-        >
-          <div className="row align-items-end">
-            <div className="col-2">
+        <footer className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-6 col-md-2">
               <h4>Provided by:</h4>
             </div>
-            <div className="col-3">
-              <img src="../static/group1.png" width="70%" />
+            <div className="col-6 col-md-3">
+              <img src="../static/group1.png" style={{ width: "100%" }} />
             </div>
           </div>
         </footer>
