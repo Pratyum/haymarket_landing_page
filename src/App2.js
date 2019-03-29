@@ -37,7 +37,7 @@ export class App2 extends Component {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row justify-content-around">
             <div
               className="col-12 col-md-3 circle-background"
@@ -153,13 +153,13 @@ export class App2 extends Component {
             </div>
           </div>
         </div>
-        <footer className="container-fluid">
-          <div className="row align-items-center">
-            <div className="col-6 col-md-2">
-              <h4>Provided by:</h4>
+        <footer className="container-fluid" style={{ paddingBottom: "10px" }}>
+          <div className="row align-items-end">
+            <div className="col-6 col-md-2 no-padding-right">
+              <h4 style={{ textAlign: "end" }}>Provided by:</h4>
             </div>
-            <div className="col-6 col-md-3">
-              <img src="../static/group1.png" style={{ width: "100%" }} />
+            <div className="col-6 col-md-2 no-padding-left">
+              <img src="../static/group2.png" style={{ width: "100%" }} />
             </div>
           </div>
         </footer>

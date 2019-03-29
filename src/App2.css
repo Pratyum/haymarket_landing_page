@@ -47,6 +47,15 @@
   z-index: 1;
 }
 
+.no-padding-right {
+  padding-right: 0px;
+}
+
+.no-padding-left {
+  padding-left: 9px;
+  padding-bottom: 10px;
+}
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -62,6 +71,9 @@
     position: absolute !important;
     bottom: 0 !important;
   }
+  .col-md-3-5 {
+    width: 30%;
+  }
 }
 
 /*  Large devices (desktops, 992px and up) */
@@ -70,6 +82,9 @@
     position: absolute;
     bottom: 0;
   }
+  .col-md-3-5 {
+    width: 30%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -77,5 +92,8 @@
   footer {
     position: absolute;
     bottom: 0;
+  }
+  .col-md-3-5 {
+    width: 30%;
   }
 }
