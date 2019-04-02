@@ -4,6 +4,7 @@
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
+  border: 10px solid white;
   position: relative;
 }
 

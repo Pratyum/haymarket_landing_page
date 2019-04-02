@@ -40,7 +40,7 @@ export class App2 extends Component {
         <div className="container-fluid">
           <div className="row justify-content-around">
             <div
-              className="col-12 col-md-3 circle-background"
+              className="col-12 col-sm-4 col-lg-3 circle-background"
               style={{ backgroundColor: "rgb(78,195,210)" }}
               onClick={() =>
                 window.open(
@@ -80,7 +80,7 @@ export class App2 extends Component {
             </div>
 
             <div
-              className="col-12 col-md-3 circle-background"
+              className="col-12 col-sm-4 col-lg-3 circle-background"
               style={{ backgroundColor: "rgb(242,123,48)" }}
               onClick={() =>
                 window.open(
@@ -120,7 +120,7 @@ export class App2 extends Component {
             </div>
 
             <div
-              className="col-12 col-md-3 circle-background"
+              className="col-12 col-sm-4 col-lg-3 circle-background"
               style={{ backgroundColor: "rgb(234,31,77)" }}
               onClick={() => window.open("https://www.panalyt.com/", "_blank")}
             >
